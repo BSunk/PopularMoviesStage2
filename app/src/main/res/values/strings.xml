@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_activity_detail">Details</string>
+
+    //Strings for the settings menu
+    <string name="action_popular">Show Popular Movies</string>
+    <string name="action_top_movies">Show Top Movies</string>
+    <string name="action_favorites">Show Favorites</string>
+
+    <string name="sort_order_key" translatable="false">sort</string>
+    <string name="sort_order_popular" translatable="false">popular</string>
+    <string name="sort_order_toprated" translatable="false">top_rated</string>
+    <string name="sort_order_favorites" translatable="false">favorites</string>
+
+    //For the favorites buttons and Toast events
+    <string name="favbuttonadd">Add Favorite</string>
+    <string name="favbuttonremove">Remove Favorite</string>
+    <string name="favoritesAdd">Added to Favorites</string>
+    <string name="favoritesRemove">Removed from Favorites</string>
+
+    <string name="release_Date">Released in %1$s</string>
+    <string name="vote_average" translatable="false" >%1$s/10</string>
+    <string name="reviewTitle">Reviews:</string>
+    <string name="noReviews">There are no reviews available</string>
+    <string name="videosTitle">Videos:</string>
+    <string name="noVideos">There are no videos available.</string>
+
+    //For the empty gridview
+    <string name="strEmpty">No movies found!</string>
+
+    <string name="action_share">Share</string>
+
+</resources>

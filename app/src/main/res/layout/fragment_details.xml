@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/details_scroll"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="25sp"
+            android:background="@color/colorAccent"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/moviePoster"
+                android:layout_width="192dp"
+                android:layout_height="256.50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@android:drawable/btn_star_big_off"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:id="@+id/favbuttonadd"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@null"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:layout_gravity="center"
+                    android:id="@+id/favbuttonremove"
+                    />
+
+                <TextView
+                    android:id="@+id/movieReleaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_gravity="center"
+                    android:textStyle="italic"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/movieVoteAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="10sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View android:background="@color/blackLine"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:text="@string/videosTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/videos"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="14sp"
+                android:layout_marginStart="14sp"
+                android:layout_marginEnd="14sp"
+                android:layout_marginRight="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+                <ProgressBar
+                    android:id="@+id/loadingVideos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+                <TextView
+                    android:id="@+id/noVideos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/noVideos"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View android:background="@color/blackLine"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:layout_marginBottom="3sp"
+            android:text="@string/reviewTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reviews"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="14sp"
+                android:layout_marginStart="14sp"
+                android:layout_marginEnd="14sp"
+                android:layout_marginRight="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/loadingReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+                <TextView
+                    android:id="@+id/noReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/noReviews"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

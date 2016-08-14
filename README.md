@@ -22,3 +22,6 @@ A sql database saves all the content. There is also a favorites database impleme
 <img src="/screenshots/Screenshot_20160813-233925.png" alt="image" width="400">
 <img src="/screenshots/Screenshot_20160813-233928.png" alt="image" width="400">
 <img src="/screenshots/Screenshot_20160813-233937.png" alt="image" width="400">
+<img src="/screenshots/device-2016-08-14-014251.png" alt="image" width="700">
+<img src="/screenshots/device-2016-08-14-014350.png" alt="image" width="700">
+<img src="/screenshots/device-2016-08-14-014434.png" alt="image" width="700">
